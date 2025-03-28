@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Muarif</title>
+    <title>CV Ahmad Muarif</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Portofolio</h1>
-        </div>
-    </header>
-
-    <div class="main-content">
-        <div class="profile-container">
-            <h2>Ahmad Muarif</h2>
-        </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#sertifikat">Sertifikat</a>
+    </nav>
+    
+    <section id="home" class="home">
+        <img src="photo/profil.jpg" alt="Foto Profil" class="profile">
+        <h2>Ahmad Muarif</h2>
+    </section>
+    
+    <section id="about" class="about container">
+        <h2>About</h2>
+        <p>Seorang mahasiswa yang sedang menjalankan perkuliahan di Universitas Muhammadiyah Surabaya dan menempuh jurusan S1 Informatika pada angkatan 2022,
+            Saya memilih jurusan Informatika karena memiliki ketertarikan dalam dunia pemrograman, terutama di bidang pengembangan web dan game development.</p>
+            <br>
+            <p>Age: 20</p>
+            <p>Email: amuarif117@email.com</p>
         
-        <section>
-            <h2>About Me</h2>
-            <p>
-              Nama saya Ahmad Muarif, saya adalah Mahasiswa Universitas Muhammadiyah Surabaya Fakultas Teknik Prodi Informatika.
-              Saya memiliki ketertatikan terhadap dunia Pemrograman terutama dalam Web 
-            </p>
-        </section>
-        
-        <section>
-            <h2>Project</h2>
-            <div class="sub-section">
-                <h3>UAS Pemrograman Web</h3>
-                <img src="ss_uas.png">
-                <p>Membuat website tentang Daftar Tugas Karyawan berbasis php dan database lalu untuk hostingnya menggunakan InfinityFree
-                </p>
+        <div class="programming-languages">
+            <h2>Bahasa Pemrograman</h2>
+            <div class="languages">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JAVASCRIPT</div>
+                <div>PHP</div>
             </div>
-        </section>
-        <section class="icon">
-            <a href="https://github.com/muariff">
-                <img src="GitHub-Symbol.png" alt="GitHub" height="30px" wight="30px">
-            </a>
-        </section>
-    </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projek">
+            <div class="project-item">
+                <img src="projek/projek1.png" alt="Project 1">
+                <p>Website inventory toko berbasis PHP</p>
+                <p>Berikut adalah yang dibuat saat mengikuti perkuliahan Capstone</p>
+            </div>
+            <div class="project-item">
+                <img src="projek/projek2.png" alt="Project 2">
+                <p>The Dungeon Purge</p>
+                <p>Project yang dibuat saat mengikuti perkuliahan pengembangan Game</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sertifikat" class="container">
+        <h2>Sertifikat</h2>
+        <div class="sertifikat">
+            <img src="sertif/sertifikat1.jpeg" alt="Sertifikat 1">
+            <img src="sertif/sertifikat2.jpg" alt="Sertifikat 2">
+            <img src="sertif/sertifikat3.jpg" alt="sertifikat 3">
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-container">
-            <p>&copy;</p>
+        <div class="social-icons">
+            <a href="https://github.com/muariff" target="_blank">
+                <img src="github-logo.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/muarifff_/" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram">
+            </a>
         </div>
+        <p>&copy; 2025 Ahmad Muarif</p>
     </footer>
+
 </body>
 </html>
