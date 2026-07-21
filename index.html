@@ -4,77 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmad Muarif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#sertifikat">Sertifikat</a>
+        <div class="nav-container">
+            <h1 class="logo">AM.</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+            </div>
+        </div>
     </nav>
     
     <section id="home" class="home">
-        <img src="photo/profil.jpg" alt="Foto Profil" class="profile">
-        <h2>Ahmad Muarif</h2>
+        <div class="home-content">
+            <div class="profile-container">
+                <img src="photo/profil.jpg" alt="Foto Profil" class="profile">
+            </div>
+            <div class="typewriter-container"><span class="typewriter-text"></span><span class="cursor">&nbsp;</span></div>
+            <h2 class="name-title">Ahmad Muarif</h2>
+            <p class="subtitle">Informatics Engineering Graduate</p>
+            <div class="hero-socials">
+                <a href="https://github.com/muariff" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/muarifff_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:muarif@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="#projects" class="btn-primary">Explore More</a>
+        </div>
     </section>
     
-    <section id="about" class="about container">
-        <h2>About</h2>
-        <p>Seorang mahasiswa yang sedang menjalankan perkuliahan di Universitas Muhammadiyah Surabaya dan menempuh jurusan S1 Informatika pada angkatan 2022,
-            Saya memilih jurusan Informatika karena memiliki ketertarikan dalam dunia pemrograman, terutama di bidang pengembangan web dan game development.</p>
-            <br>
-            <p>Age: 20</p>
-            <p>Email: amuarif117@gmail.com</p>
-        
-        <div class="programming-languages">
-            <h2>Bahasa Pemrograman</h2>
-            <div class="languages">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JAVASCRIPT</div>
-                <div>PHP</div>
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="badge-outline">Get to know me</span>
+                    <h3>Mewujudkan Ide dengan Kode</h3>
+                    <p>Berfokus pada pengembangan solusi digital yang tidak hanya bekerja secara optimal, tetapi juga terstruktur. Dengan latar belakang kuat di <strong>Web Site Developer</strong>, saya terbiasa mengubah ide kompleks menjadi karya digital yang interaktif dan inovatif.</p>
+                </div>
+                
+                <div class="resume-container">
+                    <div class="resume-section">
+                        <h3><i class="fas fa-graduation-cap" style="margin-right: 10px; color: var(--accent-primary);"></i>Pendidikan</h3>
+                        <div class="resume-item">
+                            <h4>S1 Teknik Informatika</h4>
+                            <h5>UM Surabaya <span>(Graduated)</span></h5>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h3><i class="fas fa-briefcase" style="margin-right: 10px; color: var(--accent-primary);"></i>Pengalaman Magang</h3>
+                        <div class="resume-item">
+                            <h4>Frontend Developer</h4>
+                            <h5>Telkomast Bogor</h5>
+                            <p>Membangun Website Absensi Face Recognition</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="projek">
-            <div class="project-item">
-                <img src="projek/projek1.png" alt="Project 1">
-                <p>Website inventory toko berbasis PHP</p>
-                <p>Berikut adalah yang dibuat saat mengikuti perkuliahan Capstone</p>
-            </div>
-            <div class="project-item">
-                <img src="projek/projek2.png" alt="Project 2">
-                <p>The Dungeon Purge</p>
-                <p>Project yang dibuat saat mengikuti perkuliahan pengembangan Game</p>
+    <section id="projects" class="projects">
+        <div class="portfolio-group section-padding">
+            <div class="container">
+                <h2 class="section-title"><span>Portofolio</span> & Karya</h2>
+                <div class="projek-grid">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="projek/karya1.jpg" alt="karya1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Educational Video</span>
+                        <h3>Tutorial Rigging</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="projek/projek1.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Game Dev</span>
+                        <h3>The Dungeon Purge</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="projek/projek2.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Dev</span>
+                        <h3>Website Absensi Pegawai</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="projek/projek3.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Dev</span>
+                        <h3>Website Perfomansi Kinerja Pegawai</h3>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="sertifikat" class="container">
-        <h2>Sertifikat</h2>
-        <div class="sertifikat">
-            <img src="sertif/sertifikat1.jpeg" alt="Sertifikat 1">
-            <img src="sertif/sertifikat2.jpg" alt="Sertifikat 2">
-            <img src="sertif/sertifikat3.jpg" alt="sertifikat 3">
-            <img src="sertif/Matlab.jpg" alt="sertifikat 4">
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title"><span>Keahlian</span> & Teknologi</h2>
+            
+            <div class="skills-category-group">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5 fa-3x" style="color: #e34c26;"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt fa-3x" style="color: #264de4;"></i>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js fa-3x" style="color: #f7df1e;"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php fa-3x" style="color: #777bb4;"></i>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-laravel fa-3x" style="color: #ff2d20;"></i>
+                        <h4>Laravel</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-figma fa-3x" style="color: #f24e1e;"></i>
+                        <h4>Figma</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sertifikat" class="sertifikat-section">
+        <div class="portfolio-group section-padding">
+            <div class="container">
+                <h2 class="section-title"><span>Sertifikat</span> & Penghargaan</h2>
+                <div class="sertifikat-grid">
+                    <div class="sertif-card">
+                        <img src="sertif/sertifikat1.jpeg" alt="Sertifikat 1">
+                    </div>
+                    <div class="sertif-card">
+                        <img src="sertif/Matlab.jpg" alt="Sertifikat 4">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://github.com/muariff" target="_blank">
-                <img src="Github-Logo.png" alt="GitHub">
-            </a>
-            <a href="https://www.instagram.com/muarifff_/" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
+        <div class="footer-content">
+            <h2>Ahmad Muarif</h2>
+            <p>Temukan saya di platform sosial berikut:</p>
+            <div class="social-icons">
+                <a href="https://github.com/muariff" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/muarifff_/" target="_blank" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:muarif@example.com" target="_blank" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Ahmad Muarif. All rights reserved.</p>
         </div>
-        <p>&copy; 2025 Ahmad Muarif</p>
     </footer>
 
+    <script>
+        const texts = ["Website Developer", "Frontend Developer", "Backend Developer", "AI Engineering"];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+        let isDeleting = false;
+        
+        function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currentText = texts[count];
+            
+            if (isDeleting) {
+                letter = currentText.slice(0, --index);
+            } else {
+                letter = currentText.slice(0, ++index);
+            }
+            
+            document.querySelector('.typewriter-text').textContent = letter;
+            
+            let typeSpeed = 100;
+            if (isDeleting) {
+                typeSpeed /= 2;
+            }
+            
+            if (!isDeleting && letter.length === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && letter.length === 0) {
+                isDeleting = false;
+                count++;
+                typeSpeed = 500;
+            }
+            
+            setTimeout(type, typeSpeed);
+        }
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(type, 1000);
+        });
+    </script>
 </body>
 </html>
