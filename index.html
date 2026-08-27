@@ -1,238 +1,234 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Muarif</title>
+    <title>Ahmad Muarif — Web Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <h1 class="logo">ARIF.</h1>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-            </div>
+
+    <div class="progress" id="progressBar"></div>
+
+    <header>
+        <div class="wrap navrow">
+            <div class="brand"><span class="dot"></span>AHMAD_MUARIF</div>
+            <nav>
+                <ul id="navList">
+                    <li><a href="#about" class="navlink">About</a></li>
+                    <li><a href="#experience" class="navlink">Experience</a></li>
+                    <li><a href="#projects" class="navlink">Projects</a></li>
+                    <li><a href="#skills" class="navlink">Skills</a></li>
+                    <li><a href="#contact" class="navlink">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="navtoggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
         </div>
-    </nav>
-    
-    <section id="home" class="home">
-        <div class="home-content">
-            <div class="profile-container">
-                <img src="photo/profil.jpg" alt="Foto Profil" class="profile">
+    </header>
+
+    <main>
+        <section class="hero wrap">
+            <div class="kicker" style="margin-bottom:26px;">// PORTFOLIO — WEB DEVELOPER · SURABAYA, INDONESIA</div>
+            <h1>Ahmad Muarif</h1>
+            <div class="role">
+                <span>Web Developer</span>
             </div>
-            <div class="typewriter-container"><span class="typewriter-text"></span><span class="cursor">&nbsp;</span></div>
-            <h2 class="name-title">Ahmad Muarif</h2>
-            <p class="subtitle">Informatics Engineering Graduate</p>
-            <div class="hero-socials">
-                <a href="https://github.com/muariff" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/muarifff_/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:muarif@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            <p class="lede">I build neat dashboards, data pipelines, and hardware integrations from the database to the interface — an Informatics graduate focusing on Web Development.</p>
+            <div class="cta-row">
+                <a href="#projects" class="btn btn-primary">View Projects →</a>
+                <a href="#contact" class="btn btn-ghost">Contact Me</a>
             </div>
-            <a href="#projects" class="btn-primary">Explore More</a>
-        </div>
-    </section>
-    
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <span class="badge-outline">Get to know me</span>
-                    <h3>Mewujudkan Ide dengan Kode</h3>
-                    <p>Berfokus pada pengembangan solusi digital yang tidak hanya bekerja secara optimal, tetapi juga terstruktur. Dengan latar belakang kuat di <strong>Web Site Developer</strong>, saya terbiasa mengubah ide kompleks menjadi karya digital yang interaktif dan inovatif.</p>
+
+            <div class="hero-stats" style="grid-template-columns:repeat(3,1fr);">
+                <div class="hstat">
+                    <div class="hstat-num">3.59</div>
+                    <div class="hstat-lbl">GPA / 4.00</div>
                 </div>
+                <div class="hstat">
+                    <div class="hstat-num">3+</div>
+                    <div class="hstat-lbl">Projects Delivered</div>
+                </div>
+                <div class="hstat">
+                    <div class="hstat-num">2026</div>
+                    <div class="hstat-lbl">Informatics Graduation</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spine-wrap">
+
+            <section id="about" class="wrap reveal">
+                <div class="eyebrow">init — about</div>
+                <h2 class="sec-title">About Me</h2>
+                <div class="about-grid">
+                    <div>
+                        <p>I am a Web Developer who enjoys building digital experiences from scratch — responsive interfaces, robust backend architectures, and dynamic web applications. I specialize in JavaScript, Laravel, and MySQL, with hands-on experience through hackathons, personal projects, and internships.</p>
+                        <p>I love learning new technologies, solving complex problems, and collaborating with product teams to turn ideas into functional products that provide a great user experience.</p>
+                    </div>
+                    <div>
+                        <div class="stat-card">
+                            <div class="stat-lbl">EDUCATION</div>
+                            <div class="stat-num" style="font-size:17px; line-height:1.35; margin-top:6px;">Bachelor of Informatics — Universitas Muhammadiyah Surabaya</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-lbl">TIMELINE</div>
+                            <div class="stat-num" style="font-size:20px; margin-top:6px;">Aug 2022 – Feb 2026</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-lbl">GPA</div>
+                            <div class="stat-num" style="margin-top:6px;">3.59</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="wrap reveal">
+                <div class="eyebrow">run — experience</div>
+                <h2 class="sec-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-date">SEP 2025 — NOV 2025</div>
+                        <div class="tl-role">Web Developer Intern</div>
+                        <div class="tl-co">Telkomsat<span class="sep">·</span>Bogor City</div>
+                        <p class="tl-desc">Developed a web-based attendance application serving as a monitoring dashboard for Admins and an attendance portal for Employees. Designed a functional UI and ensured the attendance data recording flow is accurately stored in the database to facilitate Admin evaluations. Contributed to the design and development phases of a hardware module (ESP32-CAM) to support the face recognition system.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="wrap reveal">
+                <div class="eyebrow">mount — projects</div>
+                <h2 class="sec-title">Personal & University Projects</h2>
+
+                <div class="filter-row" id="filterRow">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Systems</button>
+                    <button class="filter-btn" data-filter="game">Game Dev</button>
+                </div>
+
+                <div class="proj-grid" id="projGrid">
                 
-                <div class="resume-container">
-                    <div class="resume-section">
-                        <h3><i class="fas fa-graduation-cap" style="margin-right: 10px; color: var(--accent-primary);"></i>Pendidikan</h3>
-                        <div class="resume-item">
-                            <h4>S1 Teknik Informatika</h4>
-                            <h5>UM Surabaya <span>(Graduated)</span></h5>
+                    <div class="proj-card" data-cat="game" data-preview-type="video" data-preview-src="project/video/The Dungeon Purge.mp4">
+                        <div class="proj-top">
+                            <div class="proj-title">The Dungeon Purge</div>
+                            <div class="proj-tag">2D RPG<span class="dot">·</span>Platformer<span class="dot">·</span>Final Project</div>
+                            <div class="proj-desc">A 2D RPG Platformer as the final project for the Game Development course. Designed gameplay mechanics, implemented game logic, and integrated visual assets and characters into the game.</div>
+                            <div class="proj-role">Role: Game Programmer · Team of 4</div>
+                        </div>
+                        <div class="proj-stack">
+                            <span class="stack-pill">Unity Engine</span>
+                            <span class="stack-pill">C#</span>
+                            <span class="stack-pill">2D RPG</span>
+                        </div>
+                        <div class="proj-divider"></div>
+                        <div class="proj-foot">▶ <span>Click to watch preview</span></div>
+                    </div>
+
+                    <div class="proj-card" data-cat="web" data-preview-type="image" data-preview-src="project/photo/Absensi Face.png">
+                        <div class="proj-top">
+                            <div class="proj-title">Attendance System</div>
+                            <div class="proj-tag">Web Dashboard<span class="dot">·</span>Attendance<span class="dot">·</span>Hardware</div>
+                            <div class="proj-desc">An attendance website serving as an Admin dashboard and an Employee portal. The data recording flow is accurately saved to the database, with team collaboration on hardware module design.</div>
+                            <div class="proj-role">Role: Web Developer · Admin & Employee</div>
+                        </div>
+                        <div class="proj-stack">
+                            <span class="stack-pill">Dashboard</span>
+                            <span class="stack-pill">Database</span>
+                            <span class="stack-pill">ESP32-CAM</span>
+                        </div>
+                        <div class="proj-divider"></div>
+                        <div class="proj-foot">🖼 <span>Click to view preview</span></div>
+                    </div>
+
+                    <div class="proj-card" data-cat="web" data-preview-type="image" data-preview-src="project/photo/SKP.png">
+                        <div class="proj-top">
+                            <div class="proj-title">Employee Performance Info System</div>
+                            <div class="proj-tag">Information System<span class="dot">·</span>Performance Management<span class="dot">·</span>Laravel</div>
+                            <div class="proj-desc">A Laravel-based system to monitor employee performance in implementing Employee Performance Targets (SKP) and budget planning, featuring dynamic access rights management and Excel import/export capabilities.</div>
+                            <div class="proj-role">Role: Full Stack Developer · Focus on SKP & Budgeting</div>
+                        </div>
+                        <div class="proj-stack">
+                            <span class="stack-pill">Laravel</span>
+                            <span class="stack-pill">Dynamic Access Rights</span>
+                            <span class="stack-pill">Import/Export Excel</span>
+                        </div>
+                        <div class="proj-divider"></div>
+                        <div class="proj-foot">🖼 <span>Click to view preview</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="wrap reveal">
+                <div class="eyebrow">map — skills</div>
+                <h2 class="sec-title">Tools & Skills</h2>
+                <div class="skills-layout">
+                    <div class="skills-col">
+                        <div class="skill-row" data-level="90">
+                            <div class="skill-head"><span>Laravel / PHP</span><span class="lvl">Advanced</span></div>
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-row" data-level="90">
+                            <div class="skill-head"><span>HTML / CSS / JavaScript</span><span class="lvl">Advanced</span></div>
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-row" data-level="65">
+                            <div class="skill-head"><span>Database / MySQL</span><span class="lvl">Intermediate</span></div>
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-row" data-level="65">
+                            <div class="skill-head"><span>Git / GitHub</span><span class="lvl">Intermediate</span></div>
+                            <div class="skill-track"><div class="skill-fill"></div></div>
+                        </div>
+                        <div class="skill-row" data-level="35">
+                            <div class="skill-head"><span>Unity / C#</span><span class="lvl">Beginner</span></div>
+                            <div class="skill-track"><div class="skill-fill"></div></div>
                         </div>
                     </div>
-                    
-                    <div class="resume-section">
-                        <h3><i class="fas fa-briefcase" style="margin-right: 10px; color: var(--accent-primary);"></i>Pengalaman Magang</h3>
-                        <div class="resume-item">
-                            <h4>Frontend Developer</h4>
-                            <h5>Telkomast Bogor</h5>
-                            <p>Membangun Website Absensi Face Recognition</p>
+                    <div class="perks-col">
+                        <div class="perks-sub-label mono">WORKFLOW</div>
+                        <div class="perks">
+                            <span class="perk">🧩 Problem Solving</span>
+                            <span class="perk">🤝 Team Collaboration</span>
+                            <span class="perk">💬 Communication</span>
+                            <span class="perk">⏱ Time Management</span>
+                            <span class="perk">🧠 Critical Thinking</span>
+                            <span class="perk">🚀 Adaptability</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="projects" class="projects">
-        <div class="portfolio-group section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Portofolio</span> & Karya</h2>
-                <div class="projek-grid">
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="projek/karya1.jpg" alt="karya1">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Educational Video</span>
-                        <h3>Tutorial Rigging</h3>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="projek/projek1.png" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Game Dev</span>
-                        <h3>The Dungeon Purge</h3>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="projek/projek2.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Web Dev</span>
-                        <h3>Website Absensi Pegawai</h3>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="projek/projek3.png" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Web Dev</span>
-                        <h3>Website Perfomansi Kinerja Pegawai</h3>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills" class="skills section-padding">
-        <div class="container">
-            <h2 class="section-title"><span>Keahlian</span> & Teknologi</h2>
-            
-            <div class="skills-category-group">
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-html5 fa-3x" style="color: #e34c26;"></i>
-                        <h4>HTML5</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-css3-alt fa-3x" style="color: #264de4;"></i>
-                        <h4>CSS3</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js fa-3x" style="color: #f7df1e;"></i>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-php fa-3x" style="color: #777bb4;"></i>
-                        <h4>PHP</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-laravel fa-3x" style="color: #ff2d20;"></i>
-                        <h4>Laravel</h4>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-figma fa-3x" style="color: #f24e1e;"></i>
-                        <h4>Figma</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="sertifikat" class="sertifikat-section">
-        <div class="portfolio-group section-padding">
-            <div class="container">
-                <h2 class="section-title"><span>Sertifikat</span> & Penghargaan</h2>
-                <div class="sertifikat-grid">
-                    <div class="sertif-card">
-                        <img src="sertif/sertifikat1.jpeg" alt="Sertifikat 1">
-                    </div>
-                    <div class="sertif-card">
-                        <img src="sertif/Matlab.jpg" alt="Sertifikat 4">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <footer>
-        <div class="footer-content">
-            <h2>Ahmad Muarif</h2>
-            <p>Temukan saya di platform sosial berikut:</p>
-            <div class="social-icons">
-                <a href="https://github.com/muariff" target="_blank" class="social-link" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/muarifff_/" target="_blank" class="social-link" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" class="social-link" title="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="mailto:muarif@example.com" target="_blank" class="social-link" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-            <p class="copyright">&copy; 2025 Ahmad Muarif. All rights reserved.</p>
+            <section id="contact" class="wrap reveal">
+                <div class="eyebrow" style="justify-content: center;">connect — contact</div>
+                <div class="contact-box">
+                    <h2>Let's connect.</h2>
+                    <p>Open for internship opportunities, entry-level positions, and web development project collaborations.</p>
+                    <div class="contact-links">
+                        <a href="mailto:amuarif117@gmail.com" class="btn btn-primary">✉ amuarif117@gmail.com</a>
+                        <a href="tel:081230404905" class="btn btn-ghost"> +62 812-3040-4905</a>
+                        <a href="https://www.linkedin.com/in/ahmad-muarif-1570ab420/" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+                    </div>
+                </div>
+            </section>
         </div>
-    </footer>
 
-    <script>
-        const texts = ["Website Developer", "Frontend Developer", "Backend Developer", "AI Engineering"];
-        let count = 0;
-        let index = 0;
-        let currentText = "";
-        let letter = "";
-        let isDeleting = false;
-        
-        function type() {
-            if (count === texts.length) {
-                count = 0;
-            }
-            currentText = texts[count];
-            
-            if (isDeleting) {
-                letter = currentText.slice(0, --index);
-            } else {
-                letter = currentText.slice(0, ++index);
-            }
-            
-            document.querySelector('.typewriter-text').textContent = letter;
-            
-            let typeSpeed = 100;
-            if (isDeleting) {
-                typeSpeed /= 2;
-            }
-            
-            if (!isDeleting && letter.length === currentText.length) {
-                typeSpeed = 2000;
-                isDeleting = true;
-            } else if (isDeleting && letter.length === 0) {
-                isDeleting = false;
-                count++;
-                typeSpeed = 500;
-            }
-            
-            setTimeout(type, typeSpeed);
-        }
-        
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(type, 1000);
-        });
-    </script>
+        <div class="modal" id="projectModal">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-container">
+                <button class="modal-close" id="modalClose" aria-label="Close Preview">✕</button>
+                <div class="modal-content" id="modalBody">
+                </div>
+                <div class="modal-caption" id="modalCaption"></div>
+            </div>
+        </div>
+
+        <footer>© 2026 AHMAD MUARIF — SYSTEM.STATUS: ONLINE</footer>
+    </main>
+
+    <button class="totop" id="totop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
